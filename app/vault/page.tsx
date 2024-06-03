@@ -1,6 +1,7 @@
 import { Box, Container, Link } from "@mui/material";
 import { fetchPhotos } from "../../queries/fetch-photos";
 import { Metadata } from "next";
+import { visuallyHidden } from "@mui/utils";
 
 export const metadata: Metadata = {
   title: "Your vault",
@@ -26,6 +27,7 @@ export default async function VaultPage() {
             href={photo.url}
             target="_blank"
             rel="noopener noreferrer"
+            title={photo.title}
           >
             <Box
               key={photo.id}
@@ -37,7 +39,9 @@ export default async function VaultPage() {
                 aspectRatio: "1/1",
                 borderRadius: 2,
               }}
-            />
+            >
+     
+            </Box>
           </Link>
         ))}
       </Box>
