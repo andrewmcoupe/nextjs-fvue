@@ -1,13 +1,16 @@
 import Head from "next/head";
 import { Box, Grid, Link, Paper, Typography } from "@mui/material";
 import NextLink from "next/link";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Feed or Vault - you decide.",
+    description: "Go to your feed or vault.",
+};
 
 export default async function Page() {
   return (
     <div>
-      {/*<Head>*/}
-      {/*  <title></title>*/}
-      {/*</Head>*/}
       <main>
         <Box textAlign={"center"} my={8}>
           <Typography component="h1" variant="h3">

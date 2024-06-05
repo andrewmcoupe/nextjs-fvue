@@ -40,7 +40,7 @@ export default async function VaultPage() {
                 borderRadius: 2,
               }}
             >
-     
+
             </Box>
           </Link>
         ))}
